@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuknox Assignment</title>
+</head>
+
+<body>
+    <h1>Accuknox Assignment</h1>
+    <section>
+        <h2>Question 1</h2>
+        <h3>By default, are Django signals executed synchronously or
+            asynchronously? </h3>
+        <p>Yes By default django signals are executed synchronously which means they are executed one after the other
+            and to demonstrate this please click on the below link</p>
+        <a href="{% url 'synchronous' %}">demo</a>
+    </section>
+
+    <section>
+        <h2>Question 2</h2>
+        <h3>Do Django signals run in the same thread as the caller?</h3>
+        <p>Yes By default django signals run in the same thread as the caller but by adding async parameter to the
+            decorator we can make it asynchronous
+            and to demonstrate this please click on the below link</p>
+        <a href="{% url 'thread' %}">demo</a>
+    </section>
+    <section>
+        <h2>Question 3</h2>
+        <h3>By default, do Django signals run in the same database transaction as
+            the caller?</h3>
+        <p>Yes By default django signals run in the same database transaction and signals are executed within same
+            atomic block and to demonstrate this please click on the below link</p>
+        <a href="{% url 'transaction' %}">demo</a>
+    </section>
+</body>
+
+</html>
